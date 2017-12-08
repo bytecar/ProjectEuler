@@ -1,14 +1,13 @@
 package net.vkartik.projectEuler.problems.test;
-
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import net.vkartik.projectEuler.problems.code.QuadraticPrimes;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
 
 public class QuadraticPrimesTest {
 
 	@Test
-	public void testName() throws Exception {
+	public void testName(){
 		QuadraticPrimes qp = new QuadraticPrimes();
 		assertTrue(qp.run()>50);
 	}
